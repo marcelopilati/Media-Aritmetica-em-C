@@ -1,13 +1,24 @@
 #include <stdio.h>
 void main(){
 
+    float nota1, nota2, nota3, media;
 
-        float lado, area;
+    printf("Insira a primeira nota: ");
+    scanf("%f",&nota1);
 
-        printf("Escreva o lado do quadrado: ");
-        scanf("%f",&lado);
+    printf("Insira a segunda nota: ");
+    scanf("%f",&nota2);
 
-        area = lado * lado;
-        printf("A area do quadrado e: %f", area);
+    printf("Insira a terceira nota: ");
+    scanf("%f",&nota3);
+
+    media = (nota1 + nota2 + nota3)/ 3;
+    printf("A media e: %f\n",media);
+
+    if(media >= 6.0){
+        printf("Voce foi Aprovado\n");
+    }
+    else
+        printf("Voce foi Reprovado\n");
 
 }
